@@ -4,6 +4,10 @@ public class Javacoursehomework_1_4Tasks{
         int a = Integer.parseInt (args [0]);
         int b = Integer.parseInt (args [1]);
         int c = Integer.parseInt (args [2]);
+        firsttask (a,b);
+        secondtask (a,b,c);
+        thirdtask (a,b,c);
+        fourthtask (a,b);
     }
 
     public static void firsttask (int a, int b) {
