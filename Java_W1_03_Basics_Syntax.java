@@ -12,7 +12,7 @@ S=a·b и периметр P = 2·(a + b).
 
 class Java_W1_03_Basics_Syntax {
     public static void main (String [] args) {
-        int a = Integer.parseInt (args [0]);
+        int a = Integer.parseInt (args [0]);	/// В общем случае стороны могут быть нецелыми числами
         int b = Integer.parseInt (args [1]);
         int d = Integer.parseInt (args [2]);
         firstTask (a);
