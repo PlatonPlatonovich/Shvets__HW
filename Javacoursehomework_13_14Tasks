@@ -18,7 +18,7 @@ class Javacoursehomework_13_14Tasks {
     public static void task13 (int N) {
         int min = N/60;
         int hour = N/3600;
-        int seclasthour = N - (hour*3600); 
+        int seclasthour = N - (hour*3600); /// Здесь количество секунд может оказаться больше 59-ти
         int minlasthour = seclasthour/60; 
         System.out.println ("Amount of minutes is: "+min);
         System.out.println ("Amount of hours is: "+hour);
