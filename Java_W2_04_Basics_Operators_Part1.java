@@ -1,12 +1,9 @@
 /*
 1) Write a for loop that will print out all the multiples of 3 from 3 to 36, that is: 3 6 9
 12 15 18 21 24 27 30 33 36.
-
 2) Fill in the following main() routine so that it will ask the user to enter an integer, 
 read the user’s response, and tell the user whether the number entered is even or 
 odd. (Recall that an integer n is even if n % 2 == 0.)
-
-
 */
 import java.util.Scanner;
 
