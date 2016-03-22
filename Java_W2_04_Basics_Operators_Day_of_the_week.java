@@ -30,7 +30,7 @@ class Java_W2_04_Basics_Operators_Day_of_the_week {
             int x = year0+year0/4-year0/100+year0/400;
             int month0 = month+12*((14-month)/12)-2;
             int day0 = (day+x +(31*month0)/12)%7;
-            switch (day0) {
+            switch (day0) {			/// Здесь лучше использовать массив дней недели
             case 0:
                 System.out.println ("Sunday");
                 break;

@@ -7,7 +7,7 @@ create another array to hold the result.
 array a[] of different int values.
 */
 
-import java.lang.Math;
+import java.lang.Math;		/// Нет необходимости импортировать єтот пакет
 import java.util.Random;
 
 class Java_W3_06_Arrays {

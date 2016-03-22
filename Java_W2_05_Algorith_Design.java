@@ -6,8 +6,8 @@ interest value of each year.
 2) Write a program that draws a checkerboard in a console output. Usually the
 checkerboard contains 8 rows of squares and 8 columns, but for this task the board 
 can have any number of rows and columns that are specified by user. The squares 
-are black and white. The white squares should be marked as space (�O�), and the 
-black squares should be marked as �#�.
+are black and white. The white squares should be marked as space (‘O‘), and the 
+black squares should be marked as ‘#’.
 Here is a tricky way to determine whether a given square should be red or 
 black: If the row number and the column number are either both even or both odd, 
 then the square is white. Otherwise, it is black. 
@@ -17,7 +17,7 @@ O#O#
 O#O#
 #O#O
 
-3) Given a positive integer, N, define the �3N+1� sequence starting from N
+3) Given a positive integer, N, define the ’3N+1’ sequence starting from N
 as follows: If N is an even number, then divide N by two; but if N is odd,
 then multiply N by 3 and add 1. Continue to generate numbers in this way
 until N becomes equal to 1. For example, starting from N = 3, which is odd,
@@ -46,7 +46,7 @@ class Java_W2_05_Algorith_Design {
         double principal = Double.parseDouble(args[0]);
         double rate = Double.parseDouble(args[1]); 
         int yearnumber = Integer.parseInt (args[2]);
-        double interest = 0.0d;
+        double interest = 0.0d;						/// Нет необходимости писать в конце d
         int rows = Integer.parseInt (args[3]);
         int columns = Integer.parseInt (args[4]);
         int N = Integer.parseInt (args[5]);
@@ -71,13 +71,13 @@ class Java_W2_05_Algorith_Design {
         char i = '0';
         char j = '#';
             for (int n = 1; n<=64; n++) {
-                if (n%2==0 && n%8==0) {
+                if (n%2==0 && n%8==0) {			/// Если n делится на 8, то точно делится на 2
                     System.out.println (j);
                 }
-                 else if (n%2!=0 && n%8==0) {
+                 else if (n%2!=0 && n%8==0) {	/// Эти условия вместе никогда не выполнятся
                     System.out.println (i);
                 }
-                 else if (n%2==0 && n%8!=0) {
+                 else if (n%2==0 && n%8!=0) {	
                     System.out.print ( j);
                 }
                  else {
@@ -128,7 +128,7 @@ class Java_W2_05_Algorith_Design {
         int result = 0;
         for (int M=1; M<=10000; M++) {
             counter = 0; 
-            for (int D=1; D<=M; D++) {
+            for (int D=1; D<=M; D++) {			/// Нет необходимости проверять весь цикл
                 if (M%D==0) {
                     counter = counter + 1;
                 }

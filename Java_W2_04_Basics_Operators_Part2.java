@@ -44,7 +44,7 @@ class Java_W2_04_Basics_Operators_Part2 {
         }
     }
     public static void secondTask (int b, int c) {
-        if (Math.abs(b)%Math.abs(c) == 0) {
+        if (Math.abs(b)%Math.abs(c) == 0) {		/// Надо еще проверить деление c на b
             System.out.println ("True!!!");
         }
         else {
