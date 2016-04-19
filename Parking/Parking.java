@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Parking {
 		int parkingID =0;
-		Car newCar = new Car ();
+		Car newCar = new Car ();	/// Здесь должна быть коллекция авто
 		
 	public Parking () {
 	}

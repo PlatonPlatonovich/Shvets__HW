@@ -3,7 +3,7 @@ package Employee;
 import java.util.Comparator;
 
 public class Employee{
-	public static int INN=1;
+	public static int INN=1;	/// Если это порядковый номер работника, то в конструкторе его надо инкрементировать (нач. значение 0)
 	private String Name;
 	private String Surname;
 	private int Salary;
@@ -35,7 +35,7 @@ public class Employee{
 		this.Salary = Salary;
 	}
 	public String toString(){
-		return String.format("%2s %12s %15s %6s", INN++, getName(), getSurname(), getSalary());
+		return String.format("%2s %12s %15s %6s", INN++, getName(), getSurname(), getSalary()); 
 	}
 	
 	public static Comparator <Employee> compareByName = new Comparator <Employee> () {

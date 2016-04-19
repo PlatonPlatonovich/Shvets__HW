@@ -33,8 +33,8 @@ public class Reports  implements Payable{
 	return String.format("\n Total budget of the company is:\t%s\n", Total_Salary);
 	}
 	
-	public static void Min_salary (Employee [] new_employee) {
-		Employee poorestEmployee = new Employee ();
+	public static void Min_salary (Employee [] new_employee) { /// подобный метод должен возвращать либо значение 
+		Employee poorestEmployee = new Employee ();				/// минимальной зарплаты, либо работника с минимальной зарплатой	
 		int Min_Salary  =Integer.MAX_VALUE;
 		for (Employee e: new_employee) {
 			if(Min_Salary>e.getSalary()) {
